@@ -1,0 +1,26 @@
+Algorithm grahamScanConvexHull(P, n)
+Input: Array P of n points, each with x and y coordinates
+Output: Convex hull points in counter-clockwise order
+
+startIndex ← 0
+for i ← 1 to n - 1 do
+    if P[i].y < P[startIndex].y or
+       (P[i].y = P[startIndex].y and P[i].x < P[startIndex].x) then
+        startIndex ← i
+
+Swap P[0] and P[startIndex]
+startPoint ← P[0]
+
+Sort P[1 to n-1] by polar angle with startPoint
+
+stack ← empty stack
+Push P[0] to stack
+Push P[1] to stack
+Push P[2] to stack
+
+for i ← 3 to n - 1 do
+    while size of stack ≥ 2 and cross(secondTop(stack), top(stack), P[i]) ≠ 2 do
+        Pop from stack
+    Push P[i] to stack
+
+return stack
