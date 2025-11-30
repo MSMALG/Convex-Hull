@@ -10,7 +10,7 @@
 ### The study of Convex Hulls is a foundational concpet of Geometrical Analysis and other mathematical fields. 
 In this project, we discussed how you can find a convex hull "the smallest convex polygon that contains all given points" using two approaches:
 - Brute Force
-- Graham Scan
+- Graham Scan  
 We also built a prototype simulation tool using Unity Game Engine. The tool allows users to spawn points with mouse clicks and then
 select an algorithm to form a convex hull from the dataset.
 ### Observations
