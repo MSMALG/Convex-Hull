@@ -1,0 +1,27 @@
+Algorithm BruteForce_Undirected(P)
+Input: A set P of n points (x, y).
+Output: A list of unordered line segments (edges) that form the convex hull boundary.
+
+Edges ← EmptyList
+
+for i ← 1 to n do
+    for j ← i + 1 to n do
+        allLeft ← true
+        allRight ← true
+
+        for k ← 1 to n do
+            if k ≠ i and k ≠ j then
+                side_value ← (Pj.x - Pi.x) * (Pk.y - Pi.y) - (Pj.y - Pi.y) * (Pk.x - Pi.x)
+
+                if side_value < 0 then
+                    allLeft ← false
+                if side_value > 0 then
+                    allRight ← false
+
+                if not allLeft and not allRight then
+                    break
+
+        if allLeft or allRight then
+            Add the segment {Pi, Pj} to Edges
+
+return Edges
