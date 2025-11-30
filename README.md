@@ -40,7 +40,6 @@ Graham Scan
 | Purple Line | Final convex hull |  
 
 ## Refrences 
-References:
 - Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). Introduction to Algorithms (3rd ed.). MIT Press, Chapter 33, pp. 1030- 1036
 - (https://www.geeksforgeeks.org/dsa/convex-hull-using-graham-scan/)
 - (https://www.geeksforgeeks.org/dsa/convex-hull-algorithm/)
