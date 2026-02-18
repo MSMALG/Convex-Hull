@@ -20,6 +20,12 @@ Our findings confirmed our studies:
   *In some cases, Brute Force was noticed to be slightly faster when the number of points where very few*.
 
 Try the Simulation Tool here: [Convex Hull Simulator](https://msmalg.github.io/ConvexHullSimulator/)    
+
+<img width="930" height="327" alt="image (1)" src="https://github.com/user-attachments/assets/61a5136f-1e20-4fda-91ec-f24102df42bb" />
+<img width="930" height="326" alt="image" src="https://github.com/user-attachments/assets/9da56070-81af-4e4a-9488-35869be33e2d" />
+
+*see how graham scan is faster than the other*
+
 **Colours Used in Simulation:**    
 Brute Force
 | Colour  | 	Representation |
@@ -38,6 +44,7 @@ Graham Scan
 | Red Line | Right turn → reject point |
 | Green Line | Left turn → accept point |
 | Purple Line | Final convex hull |  
+
 
 ## Refrences 
 - Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). Introduction to Algorithms (3rd ed.). MIT Press, Chapter 33, pp. 1030- 1036
